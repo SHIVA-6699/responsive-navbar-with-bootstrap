@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <style>
+        nav
+        {
+            height:5em;
+        }
+      li
+      {
+        color:rgba(255, 255, 255, 0.555);
+      }
+        li:hover
+        {
+            background-color: blue;
+            border: 1px solid blue;
+           
+            padding:.3em;
+            border-radius:5px;
+
+        }
+        #menu,#drop
+        {
+            transition:all ease 1s;
+            float: left ;
+            
+        }
+      
+        img
+        {
+            width: 6rem;
+            height:3rem;
+            border-radius:1em;
+
+        }
+        
+        
+    </style>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a href="#" class="navbar-brand"><img src="/coll.png" alt=""></a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="menu">
+            <ul class="navbar-nav ms-auto gap-4">
+                <li class="nav-item dropdown ">
+                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">LineNumber1</a>
+                    <ul class="dropdown-menu bg-light">
+                        <li class="dropdown-item text-black">home</li>
+                        <li class="dropdown-item text-black">About</li>
+                        <li class="dropdown-item text-black">Contact</li>
+                        <li class="dropdown-item text-black">Address</li>
+                    </ul>
+                </li>
+                <li class="nav-item my-2">Line Number 2</li>
+                <li class="nav-item my-2">Line Number 3</li>
+                <li class="nav-item my-2">Line Number 4</li>
+                <li class="nav-item my-2">Line Number 5</li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>
